@@ -1,5 +1,5 @@
 #!/bin/bash
 apt-get update
-apt-get install build-essential htop curl lynx-cur
+apt-get install -y build-essential htop curl lynx-cur >> /var/log/syslog
 
 
