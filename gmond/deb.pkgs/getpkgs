@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Grabs deb packages
+cd /tmp
+wget http://launchpadlibrarian.net/141646331/sysv-rc_2.88dsf-41ubuntu3_all.deb;wget http://launchpadlibrarian.net/153822085/libganglia1_3.6.0-1ubuntu2_amd64.deb;wget http://launchpadlibrarian.net/153822081/ganglia-monitor_3.6.0-1ubuntu2_amd64.deb
+echo "downloaded gmond files!!" >> /var/log/syslog
+#install that puppy!
+
+dpkg -i sysv-rc_2.88dsf-41ubuntu3_all.deb;dpkg -i libganglia1_3.6.0-1ubuntu2_amd64.deb;dpkg -i ganglia-monitor_3.6.0-1ubuntu2_amd64.deb
+echo "installed gmod files" >> /var/log/syslog
+apt-get install -f
+
+
