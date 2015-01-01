@@ -8,6 +8,6 @@ echo "downloaded gmond files!!" >> /var/log/syslog
 
 dpkg -i sysv-rc_2.88dsf-41ubuntu3_all.deb;dpkg -i libganglia1_3.6.0-1ubuntu2_amd64.deb;dpkg -i ganglia-monitor_3.6.0-1ubuntu2_amd64.deb
 echo "installed gmod files" >> /var/log/syslog
-apt-get install -f
+apt-get install -f -y
 
 
