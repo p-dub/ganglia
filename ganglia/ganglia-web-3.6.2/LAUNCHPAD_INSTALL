@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get install -y build-essential automake pkg-config htop curl lynx-cur zlib1g* libpcre* libexpat* libconfuse* libapr1* >> /var/log/syslog
-
+./DEPENDENCIES_SCRIPT
 wget http://launchpadlibrarian.net/145655131/ganglia-webfrontend_3.5.8-3.1_all.deb
 apt-get install -f
 
