@@ -1,5 +1,8 @@
 #!/bin/bash
 apt-get update
+date >> /var/log/syslog
+echo starting update >> /var/log/syslog
 apt-get install -y build-essential pkg-config htop curl lynx-cur >> /var/log/syslog
-
+echo finished update >> /var/log/syslog
+date >> /var/log/syslog
 
