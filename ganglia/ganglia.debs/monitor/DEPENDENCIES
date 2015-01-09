@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#tthis will install dependencies needed
+apt-get update
+wget 
+
+

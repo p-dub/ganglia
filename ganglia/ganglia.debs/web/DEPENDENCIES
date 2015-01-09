@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#this will install dependencies needed
+apt-get update
+date >> /var/log/syslog
+time apt-get install apache2 php5 rrdtool debconf -y >> /var/log/syslog
+echo "update complete"
+sleep 10
+
+
