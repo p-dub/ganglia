@@ -9,6 +9,8 @@ ln -s /usr/local/lib64/ganglia /usr/lib/ganglia
 useradd --system ganglia
 groupadd --system ganglia
 echo UPDATE ALL DONE!!!
+echo "Creating /etc/ganglia/"
+mkdir /etc/ganglia
 echo BEGINNING INSTALL!!!
 ## get repos
 cd /tmp
@@ -24,6 +26,6 @@ cd ../monitor-core
 make
 make install
 cd ~/
-gmond -t >> /usr/local/etc/gmond.conf
+gmond -t >> /etc/ganglia/gmond.conf
 echo "ALL DONE!!!"
-vim /usr/local/etc/gmond.conf
+vim /etc/ganglia/gmond.conf
