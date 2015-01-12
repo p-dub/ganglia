@@ -9,4 +9,8 @@ http://blog.vuksan.com/2010/09/29/integrating-graphite-with-ganglia/comment-page
 http://tecadmin.net/install-nrpe-on-ubuntu/
 http://timstaley.co.uk/posts/ganglia-setup-explained/
 
+
+https://github.com/ganglia/monitor-core/wiki/Ganglia-Quick-Start
+
+
 will have files for installing ganglia and hopefully graphite.
