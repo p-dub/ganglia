@@ -4,6 +4,10 @@ echo PACKAGE UPDATE COMPLETE!!! INSTALLING....
 sleep 5
 echo "...AND>>>>GO!!!! (NOTE: this is being dumped into syslog)"
 apt-get install -y build-essential make logtail libtool automake autoconf pkg-config htop curl lynx-cur zlib1g* libpcre* libexpat* libconfuse* libapr1* >> /var/log/syslog
+echo "adding ganglia user/group"
+ln -s /usr/local/lib64/ganglia /usr/lib/ganglia
+useradd --system ganglia
+groupadd --system ganglia
 echo UPDATE ALL DONE!!!
 echo BEGINNING INSTALL!!!
 ## get repos
